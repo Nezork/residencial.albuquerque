@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Residencial Roma</title>
+    <link rel="icon" href="imgs/logo roma.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                <img src="imgs/Logo Residencial Roma.png" alt="Residencial Roma" class="logo-img">
+                </a>
+            </div>
+                <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#options">Opções</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- opções -->
+<div class="options">
+   
+    <div class="options-content">
+        <ul class="options-list">
+            <li onclick="showContent('default-content')">Início</li>
+            <li onclick="showContent('option1')">Imagem </li>
+            <li onclick="showContent('option2')">Mapa </li>
+            <li onclick="showContent('option3')">Interior </li>
+            <li onclick="showContent('option4')">Opção 4</li>
+            <li onclick="showContent('option5')">Opção 5</li>
+            <li onclick="showContent('option6')">Opção 6</li>
+            <li onclick="showContent('option7')">Opção 7</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Residencial Roma</h2>
+            <p>O mais novo empreendimento de alto padrão, com localização privilegiada e design sofisticado. Descubra o seu novo lar.</p>
+            <a href="#contato" class="cta-button">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Opções de Conteúdo -->
+
+    <div class="content-display" id="default-content">
+        <p>Bem-vindo! Selecione uma opção acima para visualizar o conteúdo.</p>
+    </div>
+                <div class="content-display hidden" id="option1">
+                    <p>Conteúdo da Opção 1</p> <br>
+                    <img src="placeholder1.jpg" alt="Imagem 1 do Residencial Luxor">
+                </div>
+                <div class="content-display hidden" id="option2">
+                    <p>conteudo da opção 2</p> <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.1361786615682!2d-46.71831368761145!3d-23.313818644726737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee428c0aba927%3A0xcc7e93df9a3c2229!2sR.%20Atlas%2C%201%20-%20Vila%20Rosa%2C%20Franco%20da%20Rocha%20-%20SP%2C%2007861-030!5e0!3m2!1spt-BR!2sbr!4v1746635019441!5m2!1spt-BR!2sbr" 
+                    width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+               <div class="content-display hidden" id="option3">
+                    <h2>Interior Roma</h2>
+                    <div class="tabs">
+                        <button class="tab-btn active" onclick="showTabContent('sala', event)">Sala</button>
+                        <button class="tab-btn" onclick="showTabContent('cozinha', event)">Cozinha</button>
+                        <button class="tab-btn" onclick="showTabContent('quarto', event)">Quarto</button>
+                    </div>
+                        <div class="tab-content" id="sala-content">
+                            <p>Conteúdo da Sala e Cozinha</p>
+                            <img src="imgs/Interior - Lançamento Roma/A3D-PI02-ATLAS-SALA E COZINHA-R00.png" alt="Sala do Residencial Roma">
+                        </div>
+                        <div class="tab-content hidden" id="cozinha-content">
+                            <p>Conteúdo da Banheiro</p>
+                            <img src="imgs/Interior - Lançamento Roma/A3D-PER01-WC-ATLAS-R00.png" alt="Cozinha do Residencial Roma">
+                        </div>
+                        <div class="tab-content hidden" id="quarto-content">
+                            <p>Conteúdo do Quarto</p>
+                            <img src="imgs/Interior - Lançamento Roma/A3D-PI03-QUARTO-R00.png" alt="Quarto do Residencial Roma">
+                            </div>
+                </div>
+
+                </div>
+                <div class="content-display hidden" id="option4">
+                    <p>Conteúdo da Opção 4</p>
+                </div>
+                <div class="content-display hidden" id="option5">
+                    <p>Conteúdo da Opção 5</p>
+                </div>
+                <div class="content-display hidden" id="option6">
+                    <p>Conteúdo da Opção 6</p>
+                </div>
+                <div class="content-display hidden" id="option7">
+                    <p>Conteúdo da Opção 7</p>
+                </div>
+
+              
+
+        <!-- Galeria de Imagens -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-images">
+        <img src="placeholder1.jpg" alt="Imagem 1 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
+        <img src="placeholder2.jpg" alt="Imagem 2 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
+        <img src="placeholder3.jpg" alt="Imagem 3 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
+        </div>
+    </section>
+
+        <a href="https://wa.me/5511943001212?text=Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades!" class="telefone"><img src="" alt=""></a>
+
+
+
+
+
+
+
+    <!-- Formulário de Contato --> 
+    <section id="contato"> 
+        <div class="formulario">
+        <form action="https://formsubmit.co/davicorreia2560@gmail.com"  method="POST">
+            <h2>Entre em Contato</h2>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+            <select name="interesse" id="interesse" required>
+                <option value="" disabled selected>Selecione sua renda familiar bruta.</option>
+                <option value="R$ 4.500,00 á R$ 6.000,00">R$ 4.500,00 á R$ 6.000,00</option>
+                <option value="R$ 6.001,00 á R$ 7.000,00">R$ 6.001,00 á R$ 7.000,00</option>
+                <option value="R$ 7.001,00 á R$ 8.000,00">R$ 7.001,00 á R$ 8.000,00</option>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </section>
+
+  <section class="footer">
+    <div class="container-footer">
+        <img src="imgs/logo roma.png" alt="Logo Residencial Roma">
+         <h2>Residencial Roma</h2>
+         <img src="imgs/logo a3dEstru.png" alt="logo A3D Estrutural" class="logo-a3d">
+                     <p>Desenvolvido por <br> <a href="https://www.a3destrutural.com.br/" target="_blank" >A3D Estrutural</a></p>
+        <div class="info">
+            <p>O seu novo lar em Franco da Rocha. Venha conhecer!</p>
+            <p>Endereço: Rua Atlas, 1 - Vila Rosa, Franco da Rocha - SP, 07861-030</p>
+            <p>Para mais informações, entre em contato conosco pelo telefone 
+                <a href="https://wa.me/5511943001212?text=Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades!" class="telefone">+55 11 94300-1212</a>
+            </p>
+        </div>
+    </div>
+    
+</section>
+<footer class="direitos">
+    <p>&copy; 2025 Linha Itália. Todos os direitos reservados.</p>
+</footer>
+    <script src="script.js"> </script>
+</body>
+</html>
