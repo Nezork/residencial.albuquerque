@@ -4,163 +4,253 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Residencial Roma</title>
-    <link rel="icon" href="logo roma.png" type="image/x-icon">
+    <title>Residencial Roma - Franco da Rocha</title>
+    <link rel="icon" href="logo roma.png" type="image/png">
+    <!-- Adicionar fontes (ex: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Adicionar biblioteca para ícones (ex: Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html" class="logo-link">
-                <img src="Logo Residencial Roma.png" alt="Residencial Roma" class="logo-img">
+                <a href="#hero">
+                    <img src="Logo Residencial Roma.png" alt="Residencial Roma Logo" class="logo-img">
                 </a>
             </div>
-                <nav class="nav">
+            <nav class="nav">
                 <ul>
                     <li><a href="#hero">Início</a></li>
-                    <li><a href="#options">Opções</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#diferenciais">Empreendimento</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            <a href="#contato" class="cta-button header-cta">Agende uma Visita</a>
+            <button class="menu-toggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
         </div>
     </header>
-<!-- opções -->
-<div class="options">
-   
-    <div class="options-content">
-        <ul class="options-list">
-            <li onclick="showContent('default-content')">Início</li>
-            <li onclick="showContent('option1')">Imagem </li>
-            <li onclick="showContent('option2')">Mapa </li>
-            <li onclick="showContent('option3')">Interior </li>
-            <li onclick="showContent('option4')">Opção 4</li>
-            <li onclick="showContent('option5')">Opção 5</li>
-            <li onclick="showContent('option6')">Opção 6</li>
-            <li onclick="showContent('option7')">Opção 7</li>
-        </ul>
-    </div>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511943001212?text=Gostaria%20de%20saber%20mais%20sobre%20o%20Residencial%20Roma!" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div> <!-- Para imagem/video de fundo -->
+        <div class="container hero-content">
+            <h1>Residencial Roma</h1>
+            <h2>O novo conceito de morar bem em Franco da Rocha</h2>
+            <p>Localização privilegiada e acabamento de alto padrão.</p>
+            <div class="hero-buttons">
+                <a href="#diferenciais" class="cta-button">Conheça seu novo lar</a>
+                <a href="#" class="cta-button secondary-cta">Baixe o folder</a> <!-- Link para o folder -->
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#diferenciais"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Seção Diferenciais -->
+    <section id="diferenciais" class="diferenciais">
+        <div class="container">
+            <h2>Diferenciais que encantam</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Localização Privilegiada</h3>
+                    <p>No coração de Franco da Rocha, perto de tudo que você precisa.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Arquitetura Contemporânea</h3>
+                    <p>Design moderno e sofisticado que valoriza seu investimento.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Acabamento Premium</h3>
+                    <p>Materiais de alta qualidade em todos os detalhes.</p>
+                </div>
+                <div class="diferencial-card">
+                    <i class="fas fa-swimmer"></i>
+                    <h3>Áreas de Lazer</h3>
+                    <p>Espaços completos para diversão e bem-estar de toda a família.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galeria de Imagens</h2>
+            <div class="galeria-categorias">
+                <button class="categoria-btn active" data-filter="all">Todos</button>
+                <button class="categoria-btn" data-filter="fachada">Fachada</button>
+                <button class="categoria-btn" data-filter="areas-comuns">Áreas Comuns</button>
+                <button class="categoria-btn" data-filter="apartamentos">Apartamentos</button>
+            </div>
+            <div class="galeria-grid">
+                <!-- Imagens serão adicionadas aqui dinamicamente ou estaticamente -->
+                <a href="A3D-PI01-ATLAS-SALA E COZINHA-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PI01-ATLAS-SALA E COZINHA-R00.png" alt="Sala e Cozinha Residencial Roma">
+                </a>
+                <a href="A3D-PI02-ATLAS-SALA E COZINHA-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PI02-ATLAS-SALA E COZINHA-R00.png" alt="Sala e Cozinha Residencial Roma">
+                </a>
+                 <a href="A3D-PI01-QUARTO-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PI01-QUARTO-R00.png" alt="Quarto Residencial Roma">
+                </a>
+                 <a href="A3D-PI02-QUARTO-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PI02-QUARTO-R00.png" alt="Quarto Residencial Roma">
+                </a>
+                 <a href="A3D-PI03-QUARTO-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PI03-QUARTO-R00.png" alt="Quarto Residencial Roma">
+                </a>
+                 <a href="A3D-PER01-WC-ATLAS-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PER01-WC-ATLAS-R00.png" alt="Banheiro Residencial Roma">
+                </a>
+                 <a href="A3D-PER02-WC-ATLAS-R00.png" data-lightbox="galeria-roma" data-title="" class="galeria-item apartamentos">
+                    <img src="A3D-PER02-WC-ATLAS-R00.png" alt="Banheiro Residencial Roma">
+                </a>
+                <a href="placeholder1.jpg" data-lightbox="galeria-roma" data-title="" class="galeria-item fachada">
+                    <img src="placeholder1.jpg" alt="Fachada Residencial Roma">
+                </a>
+                 <a href="placeholder2.jpg" data-lightbox="galeria-roma" data-title="" class="galeria-item fachada">
+                    <img src="placeholder2.jpg" alt="Fachada Residencial Roma">
+                </a>
+                 <a href="placeholder3.jpg" data-lightbox="galeria-roma" data-title="" class="galeria-item fachada">
+                    <img src="placeholder3.jpg" alt="Fachada Residencial Roma">
+                </a>
+                 <a href="placeholder4.jpg" data-lightbox="galeria-roma" data-title="" class="galeria-item fachada">
+                    <img src="placeholder4.jpg" alt="Fachada Residencial Roma">
+                </a>
+                <!-- Adicionar mais imagens -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Plantas e Detalhes -->
+    <section id="plantas" class="plantas">
+        <div class="container">
+            <h2>Plantas Inteligentes</h2>
+            <div class="plantas-tabs">
+                <button class="planta-tab-btn active" data-planta="planta-tipo-a">Apartamento Tipo A</button>
+                <!-- Adicionar mais botões se houver outras plantas -->
+            </div>
+            <div class="plantas-content">
+                <div class="planta-item active" id="planta-tipo-a">
+                    <img src="A3D-PHU-ATLAS-R00.png" alt="Planta Humanizada Residencial Roma">
+                    <div class="planta-detalhes">
+                        <h3>Apartamento Tipo A</h3>
+                        <ul>
+                            <li><i class="fas fa-ruler-combined"></i> Metragem: XX m²</li>
+                            <li><i class="fas fa-bed"></i> Quartos: X</li>
+                            <li><i class="fas fa-bath"></i> Suítes: X</li>
+                            <li><i class="fas fa-car"></i> Vagas: X</li>
+                        </ul>
+                        <a href="#" class="cta-button secondary-cta">Baixar Planta PDF</a> <!-- Link para PDF -->
+                    </div>
+                </div>
+                <!-- Adicionar mais plantas se necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Localização -->
+    <section id="localizacao" class="localizacao">
+        <div class="container">
+            <h2>Localização Perfeita</h2>
+            <p>Viva no melhor ponto de Franco da Rocha, com fácil acesso a tudo.</p>
+            <div class="mapa-container">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.1361786615682!2d-46.71831368761145!3d-23.313818644726737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee428c0aba927%3A0xcc7e93df9a3c2229!2sR.%20Atlas%2C%201%20-%20Vila%20Rosa%2C%20Franco%20da%20Rocha%20-%20SP%2C%2007861-030!5e0!3m2!1spt-BR!2sbr!4v1746635019441!5m2!1spt-BR!2sbr" 
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                 </iframe>
+            </div>
+            <div class="pontos-interesse">
+                <h3>Pontos de Interesse Próximos:</h3>
+                <ul>
+                    <li><i class="fas fa-school"></i> Escolas</li>
+                    <li><i class="fas fa-hospital"></i> Hospitais</li>
+                    <li><i class="fas fa-shopping-cart"></i> Shoppings</li>
+                    <li><i class="fas fa-bus"></i> Transporte Público</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Formulário de Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p>Preencha o formulário e receba mais informações sobre o Residencial Roma.</p>
+            <form action="https://formsubmit.co/davicorreia2560@gmail.com" method="POST" class="formulario">
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+                <input type="email" name="email" placeholder="Seu Melhor E-mail" required>
+                <input type="tel" name="telefone" placeholder="Telefone (com DDD)" required>
+                <select name="renda_familiar" required>
+                    <option value="" disabled selected>Renda Familiar Bruta</option>
+                    <option value="ate-4500">Até R$ 4.500</option>
+                    <option value="4501-6000">R$ 4.501 a R$ 6.000</option>
+                    <option value="6001-7500">R$ 6.001 a R$ 7.500</option>
+                    <option value="7501-9000">R$ 7.501 a R$ 9.000</option>
+                    <option value="acima-9000">Acima de R$ 9.000</option>
+                </select>
+                <textarea name="mensagem" rows="4" placeholder="Deixe sua mensagem (opcional)"></textarea>
+                <div class="consentimento">
+                    <input type="checkbox" id="consent" name="consentimento" required>
+                    <label for="consent">Autorizo o contato para receber informações sobre o Residencial Roma.</label>
+                </div>
+                <button type="submit" class="cta-button">Quero Mais Informações</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo roma.png" alt="Residencial Roma Logo Pequeno">
+                <p>Residencial Roma</p>
+            </div>
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Atlas, 1 - Vila Rosa, Franco da Rocha - SP</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+5511943001212">(11) 94300-1212</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@residencialroma.com.br">contato@residencialroma.com.br</a></p> <!-- Email de exemplo -->
+            </div>
+            <div class="footer-redes">
+                <h3>Siga-nos</h3>
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <!-- Adicionar outras redes se houver -->
+            </div>
+            <div class="footer-dev">
+                 <p>Desenvolvido por:</p>
+                 <a href="https://www.a3destrutural.com.br/" target="_blank">
+                    <img src="logo a3dEstru.png" alt="Logo A3D Estrutural" class="logo-a3d">
+                 </a>
+            </div>
+        </div>
+        <div class="footer-direitos">
+            <p>&copy; 2025 Residencial Roma. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<!-- Lightbox Customizado -->
+<div id="custom-lightbox" class="custom-lightbox hidden">
+    <span class="close-lightbox" id="close-lightbox">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Imagem ampliada">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
 </div>
 
-
-
-
-<!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <h2>Bem-vindo ao Residencial Roma</h2>
-            <p>O mais novo empreendimento de alto padrão, com localização privilegiada e design sofisticado. Descubra o seu novo lar.</p>
-            <a href="#contato" class="cta-button">Saiba Mais</a>
-        </div>
-    </section>
-
-    <!-- Opções de Conteúdo -->
-
-    <div class="content-display" id="default-content">
-        <p>Bem-vindo! Selecione uma opção acima para visualizar o conteúdo.</p>
-    </div>
-                <div class="content-display hidden" id="option1">
-                    <p>Conteúdo da Opção 1</p> <br>
-                    <img src="placeholder1.jpg" alt="Imagem 1 do Residencial Luxor">
-                </div>
-                <div class="content-display hidden" id="option2">
-                    <p>conteudo da opção 2</p> <br>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385.1361786615682!2d-46.71831368761145!3d-23.313818644726737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee428c0aba927%3A0xcc7e93df9a3c2229!2sR.%20Atlas%2C%201%20-%20Vila%20Rosa%2C%20Franco%20da%20Rocha%20-%20SP%2C%2007861-030!5e0!3m2!1spt-BR!2sbr!4v1746635019441!5m2!1spt-BR!2sbr" 
-                    width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-               <div class="content-display hidden" id="option3">
-                    <h2>Interior Roma</h2>
-                    <div class="tabs">
-                        <button class="tab-btn active" onclick="showTabContent('sala', event)">Sala</button>
-                        <button class="tab-btn" onclick="showTabContent('cozinha', event)">Cozinha</button>
-                        <button class="tab-btn" onclick="showTabContent('quarto', event)">Quarto</button>
-                    </div>
-                        <div class="tab-content" id="sala-content">
-                            <p>Conteúdo da Sala e Cozinha</p>
-                            <img src="A3D-PI02-ATLAS-SALA E COZINHA-R00.png" alt="Sala do Residencial Roma">
-                        </div>
-                        <div class="tab-content hidden" id="cozinha-content">
-                            <p>Conteúdo da Banheiro</p>
-                            <img src="A3D-PER01-WC-ATLAS-R00.png" alt="Cozinha do Residencial Roma">
-                        </div>
-                        <div class="tab-content hidden" id="quarto-content">
-                            <p>Conteúdo do Quarto</p>
-                            <img src="A3D-PI03-QUARTO-R00.png" alt="Quarto do Residencial Roma">
-                            </div>
-                </div>
-
-                </div>
-                <div class="content-display hidden" id="option4">
-                    <p>Conteúdo da Opção 4</p>
-                </div>
-                <div class="content-display hidden" id="option5">
-                    <p>Conteúdo da Opção 5</p>
-                </div>
-                <div class="content-display hidden" id="option6">
-                    <p>Conteúdo da Opção 6</p>
-                </div>
-                <div class="content-display hidden" id="option7">
-                    <p>Conteúdo da Opção 7</p>
-                </div>
-
-              
-
-        <!-- Galeria de Imagens -->
-    <section class="gallery" id="gallery">
-        <div class="gallery-images">
-        <img src="placeholder1.jpg" alt="Imagem 1 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
-        <img src="placeholder2.jpg" alt="Imagem 2 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
-        <img src="placeholder3.jpg" alt="Imagem 3 do Residencial Luxor"> <!-- Substitua pelo caminho correto -->
-        </div>
-    </section>
-
-        <a href="https://wa.me/5511943001212?text=Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades!" class="telefone"><img src="" alt=""></a>
-
-
-
-
-
-
-
-    <!-- Formulário de Contato --> 
-    <section id="contato"> 
-        <div class="formulario">
-        <form action="https://formsubmit.co/davicorreia2560@gmail.com"  method="POST">
-            <h2>Entre em Contato</h2>
-            <input type="text" name="nome" id="nome" placeholder="Nome" required>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
-            <select name="interesse" id="interesse" required>
-                <option value="" disabled selected>Selecione sua renda familiar bruta.</option>
-                <option value="R$ 4.500,00 á R$ 6.000,00">R$ 4.500,00 á R$ 6.000,00</option>
-                <option value="R$ 6.001,00 á R$ 7.000,00">R$ 6.001,00 á R$ 7.000,00</option>
-                <option value="R$ 7.001,00 á R$ 8.000,00">R$ 7.001,00 á R$ 8.000,00</option>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        </div>
-    </section>
-
-  <section class="footer">
-    <div class="container-footer">
-        <img src="logo roma.png" alt="Logo Residencial Roma">
-         <h2>Residencial Roma</h2>
-         <img src="logo a3dEstru.png" alt="logo A3D Estrutural" class="logo-a3d">
-                     <p>Desenvolvido por <br> <a href="https://www.a3destrutural.com.br/" target="_blank" >A3D Estrutural</a></p>
-        <div class="info">
-            <p>O seu novo lar em Franco da Rocha. Venha conhecer!</p>
-            <p>Endereço: Rua Atlas, 1 - Vila Rosa, Franco da Rocha - SP, 07861-030</p>
-            <p>Para mais informações, entre em contato conosco pelo telefone 
-                <a href="https://wa.me/5511943001212?text=Gostaria%20de%20saber%20mais%20sobre%20as%20oportunidades!" class="telefone">+55 11 94300-1212</a>
-            </p>
-        </div>
-    </div>
-    
-</section>
-<footer class="direitos">
-    <p>&copy; 2025 Linha Itália. Todos os direitos reservados.</p>
-</footer>
-    <script src="script.js"> </script>
+    <script src="script.js"></script>
 </body>
 </html>
